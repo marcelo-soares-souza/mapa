@@ -10,5 +10,6 @@ var url = "http://projetos.hexgis.com/geoserver/wms";
 var wms_ti = L.tileLayer.betterWms(url, {
       layers: 'HEX:terra_indigena',
         transparent: true,
-        format: 'image/png'
+        format: 'image/png',
+        propertyName: 'terrai_nom'
       });

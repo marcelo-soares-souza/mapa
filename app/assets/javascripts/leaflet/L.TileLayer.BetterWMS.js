@@ -21,6 +21,7 @@ L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
     $.ajax({
       url: url,
       success: function (data, status, xhr) {
+        console.log(url);
         var err = typeof data === 'string' ? null : data;
         showResults(err, evt.latlng, data);
       },
@@ -48,6 +49,7 @@ L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
           width: size.x,
           layers: this.wmsParams.layers,
           query_layers: this.wmsParams.layers,
+          propertyName: this.wmsParams.propertyName,
           info_format: 'text/html'
         };
     
