@@ -3,7 +3,7 @@ $(document).ready(function(){
 
   // Control Layers
   var baseLayers = { "OSM": osm, "MapBox": mapbox };
-  var overLayers = { "TI": wms_ti, "TI WFS": ti };
+  var overLayers = { "TI": wms_ti, "TI WFS": ti, "Fortaleza": wms_fortaleza, "Homicidio" : wms_homicidio };
 
   // Extensions
   L.Control.zoomHome().addTo(map);
